@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:foregroundTint="@android:color/white"
+    android:padding="10dp"
+    android:elevation="15dp"
+    android:id="@+id/track_list">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/musicImage"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_music_basic" />
+
+    <TextView
+        android:id="@+id/musicTitle"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/musicImage"
+        android:paddingLeft="10dp"
+        android:text="Tên bài hát"
+        android:textColor="#89817F"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/musicArtist"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/musicImage"
+        android:layout_below="@+id/musicTitle"
+        android:paddingLeft="10dp"
+        android:text="Nghệ sĩ"
+        android:textColor="#89817F"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/musicDuration"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/musicImage"
+        android:layout_below="@+id/musicArtist"
+        android:paddingLeft="10dp"
+        android:text="0:00"
+        android:textColor="#89817F"
+        android:textSize="11sp"
+        />
+
+    <ImageView
+        android:id="@+id/musicOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:tint="#89817F"
+        android:src="@drawable/ic_more_vert_black_24dp"
+    />
+    <ImageView
+        android:id="@+id/imgIsPlay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/musicOption"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"/>
+
+</RelativeLayout>
